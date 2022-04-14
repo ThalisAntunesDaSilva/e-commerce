@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+
+/*Definição de títulos/ subtitulos/ corpos de texto */
+h1{
+    color: #1b1b1b;
+    font-size: 40px;
+}
+
+h2{ color: #1b1b1b;
+    font-size:27px
+}
+
+h3{ color: #382f2f;
+    font-size:20px;
+}
+
+p{ 
+    color: #382f2f;
+    font-size:15px; 
+}
