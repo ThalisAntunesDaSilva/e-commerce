@@ -10,20 +10,17 @@
 .carousel-item {
   width: 100%;
   height: 700px;
- 
+
   -webkit-box-shadow: 0px 0px 10px 7px #606060;
 
   -moz-box-shadow: 0px 0px 10px 7px #606060;
 
   box-shadow: 0px 0px 10px 7px #606060;
-
-  
 }
 
 #item-1 {
-  
   background-image: url(../../assets/products.jpg);
- 
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -74,8 +71,8 @@
   font-weight: 400;
 }
 
-.item-shadow{
-  background: rgba(0,0,0,0.4);
+.item-shadow {
+  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 700px;
   display: flex;
@@ -85,16 +82,41 @@
   padding: 10px 10px 10px 10px;
 }
 
-.button-look{
-  height:60px;
-  width:120px;
-  margin-top:40px;
-  background-color: #00453E;
+.button-look {
+  height: 60px;
+  width: 120px;
+  margin-top: 40px;
+  background-color: #00453e;
   color: #fff;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.button-look:hover{
- background-color: #057467;
- transition: 1s;
+.button-look:hover {
+  background-color: #057467;
+  transition: 1s;
+}
+
+@media (max-width: 600px) {
+  .carousel-item {
+    width: 100%;
+    height: 400px;
+  }
+  .item-shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 50px 10px 10px 10px;
+  }
+  .subtitle-highlights {
+    font-size: 15px;
+  }
+  .title-highlights {
+    font-size: 17px;
+  }
+  .button-look {
+    height: 40px;
+    width: 70px;
+    margin-top: 20px;
+  }
 }
