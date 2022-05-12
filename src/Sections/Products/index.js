@@ -45,7 +45,7 @@ function Products() {
       </div>
 
       <div className="product-release">
-            <h1 className="title-release">Produtos em promoção</h1>
+            <h1 className="title-release">Promoções</h1>
          
                 <ul className="product-list">
                     <li className="list-item">

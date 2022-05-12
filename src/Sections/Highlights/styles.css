@@ -4,6 +4,12 @@
   margin-bottom: 200px;
 }
 
+@media (max-width: 600px) {
+  .highlights-body {
+    margin-bottom: -300px;
+  }
+}
+
 .carousel {
 }
 
