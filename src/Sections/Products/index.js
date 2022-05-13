@@ -9,7 +9,7 @@ function Products() {
   return <div>
       <div className="product-release">
             <h1 className="title-release">Produtos lançados</h1>
-         
+          
                 <ul className="product-list">
                     <li className="list-item">
                         <div>

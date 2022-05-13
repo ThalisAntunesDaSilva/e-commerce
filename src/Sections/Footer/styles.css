@@ -1,5 +1,5 @@
 .footer-body{
-    height:50vh;
+    height:auto;
     width:100%;
     background-color:  #00453D;
     display: flex;
@@ -7,6 +7,7 @@
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
+    padding: 20px 0px 20px 0px;
 }
 
 
@@ -20,9 +21,18 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-   
-   
+}
 
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 350px;
+}
+
+.contacts-title{
+    color: #ffffff
 }
 
 
@@ -33,4 +43,28 @@
     align-items: center;
     justify-content: center;
     margin-top:10px
+}
+
+.localization{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-localization{
+    color: #ffffff;
+    margin-bottom:10px;
+}
+
+@media (max-width: 600px) {
+    .footer-body{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        padding: 20px 0px 20px 0px;
+    }
+    .contacts{
+        padding-bottom: 30px;
+    }
 }
