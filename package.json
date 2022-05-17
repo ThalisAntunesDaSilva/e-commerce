@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@africasokoni/react-image-magnifiers": "^1.0.2",
     "@googlemaps/react-wrapper": "^1.1.33",
     "@react-google-maps/api": "^2.10.2",
     "@testing-library/jest-dom": "^5.16.4",
@@ -12,6 +13,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
+    "react-image-magnifiers": "^1.4.0",
+    "react-image-magnify": "^2.7.4",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",

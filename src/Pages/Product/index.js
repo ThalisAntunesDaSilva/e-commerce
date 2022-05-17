@@ -1,7 +1,19 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../../Sections/NavBar";
+import ProductDetails from "../../Sections/ProductDetails";
 
-export default function Home() {
+
+
+import Footer from "../../Sections/Footer";
+
+export default function Product() {
   return (
-    <div>index</div>
-  )
+    <>
+      <NavBar />
+      <div>
+        <ProductDetails />
+      </div>
+      <Footer />
+    </>
+  );
 }

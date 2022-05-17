@@ -1,0 +1,22 @@
+.container{
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.pictures{ 
+    width: 100px;
+    height: auto;
+}
+
+.picture-preview {
+    width: 100px;
+    height: 100px;
+}
+
+.magnify-container{
+    border-style: solid;
+    width: 800px;
+}
+
+
