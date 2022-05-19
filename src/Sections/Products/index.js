@@ -10,73 +10,61 @@ function Products() {
       <div className="product-release">
         <h1 className="title-release">Produtos lançados</h1>
 
-        <ul className="product-list">
-          <li className="list-item">
-            <a href="/products">
-              <div>
-                <img src={shirt} className="img-product" />
-                <h3 className="title-product">Camiseta Fashion</h3>
-                <h1 className="price-product">R$ 109,90</h1>
-              </div>
-            </a>
-          </li>
-
-          <li className="list-item">
-            <a href="/products">
-              <div>
-                <img src={shirt2} className="img-product" />
-                <h3 className="title-product">Camiseta Curta</h3>
-                <h1 className="price-product">R$ 109,90</h1>
-              </div>
-            </a>
-          </li>
-
-          <li className="list-item">
-            <a href="/products">
-              <div>
-                <img src={shirt3} className="img-product" />
-                <h3 className="title-product">Camiseta Xadrez</h3>
-                <h1 className="price-product">R$ 109,90</h1>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="product-release">
-        <h1 className="title-release">Promoções</h1>
-
-        <ul className="product-list">
-          <li className="list-item">
-            <a href="/products"></a>
+        <div className="product-list">
+          <a href="/products" className="list-item">
             <div>
               <img src={shirt} className="img-product" />
               <h3 className="title-product">Camiseta Fashion</h3>
               <h1 className="price-product">R$ 109,90</h1>
             </div>
-            <a />
-          </li>
+          </a>
 
-          <li className="list-item">
-            <a href="/products"></a>
+          <a href="/products" className="list-item">
             <div>
               <img src={shirt2} className="img-product" />
               <h3 className="title-product">Camiseta Curta</h3>
               <h1 className="price-product">R$ 109,90</h1>
             </div>
-            <a />
-          </li>
+          </a>
 
-          <li className="list-item">
-            <a href="/products"></a>
+          <a href="/products" className="list-item">
             <div>
               <img src={shirt3} className="img-product" />
               <h3 className="title-product">Camiseta Xadrez</h3>
               <h1 className="price-product">R$ 109,90</h1>
             </div>
-            <a />
-          </li>
-        </ul>
+          </a>
+        </div>
+      </div>
+
+      <div className="product-release">
+        <h1 className="title-release">Promoções</h1>
+
+        <div className="product-list">
+          <a href="/products" className="list-item">
+            <div>
+              <img src={shirt} className="img-product" />
+              <h3 className="title-product">Camiseta Fashion</h3>
+              <h1 className="price-product">R$ 109,90</h1>
+            </div>
+          </a>
+
+          <a href="/products" className="list-item">
+            <div>
+              <img src={shirt2} className="img-product" />
+              <h3 className="title-product">Camiseta Curta</h3>
+              <h1 className="price-product">R$ 109,90</h1>
+            </div>
+          </a>
+
+          <a href="/products" className="list-item">
+            <div>
+              <img src={shirt3} className="img-product" />
+              <h3 className="title-product">Camiseta Xadrez</h3>
+              <h1 className="price-product">R$ 109,90</h1>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );

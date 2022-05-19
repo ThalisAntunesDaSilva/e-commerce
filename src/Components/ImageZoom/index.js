@@ -12,30 +12,35 @@ import shirt3 from "../../assets/shirt3.jpg";
 export default function ImageZoom() {
   return (
     <div className="container">
+      <div className="legend-container">
+        <h1>Camisa Fashion</h1>
+        <span>
+          Camisa muito boa, elegante de excelente qualidade, uma ótima escolha
+          para usar em dias quentes no verão
+        </span>
+      </div>
+      
+      <div className="images-container">
       <div className="pictures">
         <img className="picture-preview" src={shirt2} />
         <img className="picture-preview" src={shirt} />
         <img className="picture-preview" src={shirt3} />
       </div>
-      <div className="magnify-container">
-        <MagnifierContainer>
-          <div className="thumbSection">
-            <div className="picture">
-              <MagnifierPreview
-                style={{ width: "500px", height: "500px" }}
-                imageSrc={shirt2}
-              />
-            </div>
-            <div>
-              <MagnifierZoom
-                className="thumbZoom"
-                style={{ height: "200px", width: "200px" }}
-                imageSrc={shirt2}
-              />
-            </div>
-          </div>
-        </MagnifierContainer>
+
+      <MagnifierContainer className="magnify">
+        <MagnifierPreview
+          style={{ width: "500px", height: "500px" }}
+          imageSrc={shirt2}
+        />
+
+        <MagnifierZoom
+          className="thumbZoom"
+          style={{ height: "400px", width: "400px" }}
+          imageSrc={shirt2}
+        />
+      </MagnifierContainer>
       </div>
+      
     </div>
   );
 }

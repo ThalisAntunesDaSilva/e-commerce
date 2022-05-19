@@ -33,6 +33,12 @@
   -moz-box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.44);
 }
 
+.list-item:hover{
+  height: 450px;
+  width: 450px;
+  transition: 0.5s;
+}
+
 .img-product {
   height: 200px;
   width: 200px;
