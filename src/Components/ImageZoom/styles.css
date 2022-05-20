@@ -15,7 +15,7 @@
 .images-container {
   display: flex;
   flex-direction: row;
-  height: 800px;
+  height: 600px;
   width: 100%;
   padding: 40px 40px 40px 40px;
 }
@@ -43,6 +43,10 @@
 .magnify {
   display: flex;
   flex-direction: row;
-  width: 1100px;
+  width: 750px;
   justify-content: space-evenly;
+}
+
+.thumbZoom{
+  margin-left: 10px;
 }

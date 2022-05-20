@@ -1,0 +1,31 @@
+.product-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.properties-product{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.check-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 120px;
+    height: 40px;
+}
+
+.product-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+}

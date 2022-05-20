@@ -35,7 +35,7 @@ export default function ImageZoom() {
 
         <MagnifierZoom
           className="thumbZoom"
-          style={{ height: "400px", width: "400px" }}
+          style={{ height: "500px", width: "500px" }}
           imageSrc={shirt2}
         />
       </MagnifierContainer>
