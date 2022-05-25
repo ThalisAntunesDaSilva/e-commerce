@@ -1,3 +1,5 @@
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -49,4 +51,28 @@
 
 .thumbZoom{
   margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+ .container{
+   margin-bottom: 10px;
+ }
+  .images-container{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 10px 10px 10px;
+    width: 400px;
+
+  }
+  .pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height:auto;
+    width: 375px;
+    margin-bottom: 20px;
+    
+  }
+  
 }

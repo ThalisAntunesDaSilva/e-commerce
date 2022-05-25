@@ -29,6 +29,7 @@ export default function ImageZoom() {
 
       <MagnifierContainer className="magnify">
         <MagnifierPreview
+          className="magnifer-preview"
           style={{ width: "500px", height: "500px" }}
           imageSrc={shirt2}
         />

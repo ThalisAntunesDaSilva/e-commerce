@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../../Sections/NavBar";
-import ProductDetails from "../../Sections/ProductDetails";
+import ImageZoom from "../../Components/ImageZoom/index";
 import Footer from "../../Sections/Footer";
 import "./styles.css";
 
@@ -9,7 +9,7 @@ export default function Product() {
     <>
       <NavBar />
       <div className="product-details">
-        <ProductDetails />
+        <ImageZoom />
         <div className="properties-product">
   
       <div className="product-options">
@@ -39,6 +39,8 @@ export default function Product() {
       </div>
          
           <h1>R$ 200,00</h1>
+
+          <button className="button-purchase">Comprar</button>
         </div>
       </div>
       <Footer />
