@@ -92,13 +92,14 @@
   height: 60px;
   width: 120px;
   margin-top: 40px;
-  background-color: #00453e;
+  background-color: #6730dd;
   color: #fff;
   cursor: pointer;
+  border-style:none;
 }
 
 .button-look:hover {
-  background-color: #057467;
+  background-color: #8455e9;
   transition: 1s;
 }
 

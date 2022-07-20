@@ -1,5 +1,5 @@
 .navbar-body{
-    background-color:  #00453D;
+    background-color:  #010101;
     height:10vh;
     width:100%;
     display:flex;
@@ -26,7 +26,7 @@
     height: 40px;
     width: 40px;
     border-radius:10px;
-    background-color: #00453D;
+    background-color: #010101;
     color: white;
     padding:5px 5px 5px 5px;
 }
@@ -34,7 +34,7 @@
 .cart-icon:hover{
     height: 40px;
     width: 40px;
-    background-color: #057467;
+    background-color: #0c0c0c;
     color: white;
     cursor: pointer;
     transition: 1s

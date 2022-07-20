@@ -6,10 +6,7 @@ import shirt3 from "../../assets/shirt3.jpg";
 import api from "../../services/api";
 
 function Products() {
-  const [data, setData] = useState({});
-
   const [produto, setProduto] = useState([]);
-  const [buy, setBuy] = useState([]);
 
   async function getProducts() {
     try {
@@ -26,8 +23,6 @@ function Products() {
     }
   }
 
-  async function buyProduct() {}
-
   useEffect(() => {
     getProducts();
   }, []);
@@ -36,7 +31,12 @@ function Products() {
     try {
       await api
         .post("/buy?id=1", {
-          headers: { "Access-Control-Allow-Origin": false },
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
+            "Access-Control-Allow-Headers":
+              "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+          },
           mode: "cors",
         })
         .then((response) => {

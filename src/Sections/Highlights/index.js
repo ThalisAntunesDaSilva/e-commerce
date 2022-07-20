@@ -19,7 +19,7 @@ function Highlights() {
       >
         <div id="item-1" className="carousel-item">
           <div className="item-shadow">
-            <h1 className="title-highlights">Produtos</h1>
+            <h1 className="title-highlights">Voe alto!</h1>
             <h3 className="subtitle-highlights">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -31,7 +31,7 @@ function Highlights() {
 
         <div id="item-2" className="carousel-item">
           <div className="item-shadow">
-            <h1 className="title-highlights">Lançamentos</h1>
+            <h1 className="title-highlights">MVP da rodada!</h1>
             <h3 className="subtitle-highlights">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -43,7 +43,7 @@ function Highlights() {
 
         <div id="item-3" className="carousel-item">
           <div className="item-shadow">
-            <h1 className="title-highlights">Moda masculina</h1>
+            <h1 className="title-highlights">The best</h1>
             <h3 className="subtitle-highlights">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -55,7 +55,7 @@ function Highlights() {
 
         <div id="item-4" className="carousel-item">
           <div className="item-shadow">
-            <h1 className="title-highlights">Acessórios</h1>
+            <h1 className="title-highlights">Os melhores Jordans</h1>
             <h3 className="subtitle-highlights">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -67,7 +67,7 @@ function Highlights() {
 
         <div id="item-5" className="carousel-item">
           <div className="item-shadow">
-            <h1 className="title-highlights">Moda feminina</h1>
+            <h1 className="title-highlights">Bandeja</h1>
             <h3 className="subtitle-highlights">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
