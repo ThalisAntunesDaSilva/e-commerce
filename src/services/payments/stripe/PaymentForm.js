@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import axios from "axios";
+import api from "../../api";
 import "./styles.css";
 import {  toast } from "react-toastify";
 
@@ -40,7 +40,7 @@ function PaymentForm() {
       try {
         toast.success("carregando");
         const { id } = paymentMethod;
-        const response = await axios.post("http://localhost:8080/payment", {
+        const response = await api.post("payment", {
           amount: 100,
           id,
         });
