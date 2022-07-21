@@ -38,7 +38,7 @@ function PaymentForm() {
 
     if (!error) {
       try {
-        toast.success("carregando");
+        toast("carregando");
         const { id } = paymentMethod;
         const response = await api.post("payment", {
           amount: 100,
