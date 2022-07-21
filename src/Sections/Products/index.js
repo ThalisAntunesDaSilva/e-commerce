@@ -1,128 +1,56 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
-import shirt from "../../assets/shirt.jpg";
-import shirt2 from "../../assets/shirt2.jpg";
-import shirt3 from "../../assets/shirt3.jpg";
 import api from "../../services/api";
+import { useNavigate } from 'react-router-dom';
 
 function Products() {
   const [produto, setProduto] = useState([]);
+  const navigate = useNavigate();
 
-  async function getProducts() {
+  async function handleProducts() {
     try {
-      const response = await api.get("produtos", {
-        headers: { "Access-Control-Allow-Origin": true },
-        mode: "cors",
-      });
-
-      const data = response.data;
-      alert(data);
+      const response = await api.get("/v1/products");
+      const data = response.data.data;
       setProduto(data);
     } catch (err) {
       console.log(err);
     }
   }
 
-  useEffect(() => {
-    getProducts();
-  }, []);
-
-  async function handlePayment() {
+  async function selectProduct(product) {
     try {
-      await api
-        .post("/buy?id=1", {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
-            "Access-Control-Allow-Headers":
-              "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-          },
-          mode: "cors",
-        })
-        .then((response) => {
-          console.log(response.data);
-        });
+    
+      localStorage.setItem("productselect",JSON.stringify(product));
+      navigate("/products");
     } catch (err) {
-      console.log(err);
+      alert(err);
     }
   }
+
+  useEffect(() => {
+    handleProducts();
+  }, []);
 
   return (
     <div>
       <div className="product-release">
-        <ul>
-          {produto.map((item) => (
-            <li key={item.id}>
-              <p>{item.titulo}</p>
-              <img src={item.img} alt="produto" className="products-image" />
-            </li>
-          ))}
-        </ul>
-
-        <button
-          onClick={() => {
-            handlePayment();
-          }}
-        >
-          OK
-        </button>
         <h1 className="title-release">Produtos lançados</h1>
 
-        <div className="product-list">
-          <a href="/products" className="list-item">
+        <ul className="list-products">
+          {produto.length > 0 ? (
+            produto.map((product) => (
+              <a key={product.id} href="/products" className="list-item" onClick={() => {selectProduct(product)}}>
+                <img src={product.images[0]} className="img-product" />
+                <h3 className="title-product">{product.name}</h3>
+                <h1 className="price-product">R$ 1,00</h1>
+              </a>
+            ))
+          ) : (
             <div>
-              <img src={shirt} className="img-product" />
-              <h3 className="title-product">Camiseta Fashion</h3>
-              <h1 className="price-product">R$ 109,90</h1>
+              <h3>Nem um produto disponível no momento D:</h3>
             </div>
-          </a>
-
-          <a href="/products" className="list-item">
-            <div>
-              <img src={shirt2} className="img-product" />
-              <h3 className="title-product">Camiseta Curta</h3>
-              <h1 className="price-product">R$ 109,90</h1>
-            </div>
-          </a>
-
-          <a href="/products" className="list-item">
-            <div>
-              <img src={shirt3} className="img-product" />
-              <h3 className="title-product">Camiseta Xadrez</h3>
-              <h1 className="price-product">R$ 109,90</h1>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div className="product-release">
-        <h1 className="title-release">Promoções</h1>
-
-        <div className="product-list">
-          <a href="/products" className="list-item">
-            <div>
-              <img src={shirt} className="img-product" />
-              <h3 className="title-product">Camiseta Fashion</h3>
-              <h1 className="price-product">R$ 109,90</h1>
-            </div>
-          </a>
-
-          <a href="/products" className="list-item">
-            <div>
-              <img src={shirt2} className="img-product" />
-              <h3 className="title-product">Camiseta Curta</h3>
-              <h1 className="price-product">R$ 109,90</h1>
-            </div>
-          </a>
-
-          <a href="/products" className="list-item">
-            <div>
-              <img src={shirt3} className="img-product" />
-              <h3 className="title-product">Camiseta Xadrez</h3>
-              <h1 className="price-product">R$ 109,90</h1>
-            </div>
-          </a>
-        </div>
+          )}
+        </ul>
       </div>
     </div>
   );

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;	
+	background-color:#292929;
+	color: white;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	justify-content: center;
+	align-items: center;
+}
+.formGroup {
+	margin: 0 15px 20px;
+	padding: 0;
+	border-style: none;
+	width: 600px;
+	will-change: opacity, transform;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+	border-radius: 4px;
+}
+
+.formRow {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-left: 15px;
+	
+}
+
+.StripeElement--webkit-autofill {
+	background: transparent !important;
+}
+
+.StripeElement {
+	width: 100%;
+	padding: 11px 15px 11px 0;
+}
+
+button {
+	
+	font-size: 20px;
+	width: calc(100% - 10px);
+	height: 70px;
+	margin: 40px 15px 0;
+	background-color: #f6a4eb;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #ffb9f6;
+	border-radius: 4px;
+	color: #000;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 100ms ease-in-out;
+	will-change: transform, background-color, box-shadow;
+	border: none;
+}
+
+button:active {
+	background-color: #d782d9;
+	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #e298d8;
+	transform: scale(0.99);
+}
+
+.App {
+	margin-left: 25%;
+	margin-top: 5%;
+	margin-right: 25%;
+}
+
+h1,
+h3 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.control{
+	height:500px;
+	width:500px;
+}
+
+.container-product{
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: center;
+	align-items: center;
+}
+.container-left{
+	width: 50vw;
+}
+
+.feedback{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}

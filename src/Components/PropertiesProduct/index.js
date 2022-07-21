@@ -1,38 +1,23 @@
-import React from 'react'
+import React from "react";
 
 export default function PropertiesProduct() {
+  const produto = JSON.parse(localStorage.getItem("productselect"));
+
   return (
-    <div className="properties-product">
-  
-    <div className="product-options">
-    <h3>Cor</h3>  
-    <div className="check-options">
-    <input type="checkbox" />             
-    <label for="scales">Preto</label>
-    </div>
+    <div className="legend-container">
+      <h1>{produto.name}</h1>
+      <span>{produto.description}</span>
 
-    <div className="check-options">
-    <input type="checkbox" />
-    <label for="horns">Branco</label>
-    </div>
-    </div>
-
-    <div className="product-options">
-    <h3>Tamanho</h3>  
-    <div className="check-options">
-    <input type="checkbox" />             
-    <label for="scales">G</label>
-    </div>
-
+      {/*
     <div className="check-options">
     <input type="checkbox" />
     <label for="horns">GG</label>
     </div>
     </div>
-       
-        <h1>R$ 200,00</h1>
+  */}
+      <h1 className="price">R$ 1,00</h1>
 
-        <button className="button-purchase">Comprar</button>
-      </div>
-  )
+      <button className="button-purchase">Comprar</button>
+    </div>
+  );
 }

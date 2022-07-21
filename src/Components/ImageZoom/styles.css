@@ -1,22 +1,28 @@
-
-
 .container {
   display: flex;
   flex-direction: column;
 }
 
+.price{
+  margin: 20px 20px 20px 20px;
+}
+
 .legend-container {
   margin-top: 10px;
-  padding-left: 50px;
-  height: 100px;
+  padding-left: 0px;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-direction: space-between;
+  
+  justify-content: center;
 }
 
 .images-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 600px;
   width: 100%;
   padding: 40px 40px 40px 40px;
@@ -49,30 +55,27 @@
   justify-content: space-evenly;
 }
 
-.thumbZoom{
+.thumbZoom {
   margin-left: 10px;
 }
 
 @media (max-width: 600px) {
- .container{
-   margin-bottom: 10px;
- }
-  .images-container{
+  .container {
+    margin-bottom: 10px;
+  }
+  .images-container {
     display: flex;
     flex-direction: column;
     padding: 60px 10px 10px 10px;
     width: 400px;
-
   }
-  .pictures{
+  .pictures {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height:auto;
+    height: auto;
     width: 375px;
     margin-bottom: 20px;
-    
   }
-  
 }

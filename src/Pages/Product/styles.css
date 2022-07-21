@@ -1,3 +1,4 @@
+
 .product-details{
     display: flex;
     flex-direction: row;
@@ -34,14 +35,14 @@
     height:60px;
     width: 180px;
     color: #fff;
-    background-color:  #00453D;
+    background-color:  #6730dd;
     border-style: none;
     margin-top: 10px;
 }
 
 .button-purchase:hover{
-    transition: 0.1s;
-    background-color:  #00796b;
+    transition: 0.3s;
+    background-color:  #7e45f8;
     cursor: pointer;
 
 }

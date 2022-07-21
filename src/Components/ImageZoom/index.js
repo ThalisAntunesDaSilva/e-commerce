@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   MagnifierPreview,
   MagnifierContainer,
@@ -9,38 +9,41 @@ import shirt2 from "../../assets/shirt2.jpg";
 import shirt from "../../assets/shirt.jpg";
 import shirt3 from "../../assets/shirt3.jpg";
 
+
 export default function ImageZoom() {
+
+
+const produto = JSON.parse(localStorage.getItem("productselect"));
+
+
+
   return (
     <div className="container">
-      <div className="legend-container">
-        <h1>Camisa Fashion</h1>
+  {/*       <div className="legend-container">
+        <h1>{produto.name}</h1>
         <span>
-          Camisa muito boa, elegante de excelente qualidade, uma ótima escolha
-          para usar em dias quentes no verão
+        {produto.description}
         </span>
       </div>
-      
-      <div className="images-container">
-      <div className="pictures">
-        <img className="picture-preview" src={shirt2} />
-        <img className="picture-preview" src={shirt} />
-        <img className="picture-preview" src={shirt3} />
-      </div>
+      */}
 
+      <div className="images-container">
+   
       <MagnifierContainer className="magnify">
         <MagnifierPreview
           className="magnifer-preview"
           style={{ width: "500px", height: "500px" }}
-          imageSrc={shirt2}
+          imageSrc={produto.images[0]}
         />
 
         <MagnifierZoom
           className="thumbZoom"
           style={{ height: "500px", width: "500px" }}
-          imageSrc={shirt2}
+          imageSrc={produto.images[0]}
         />
       </MagnifierContainer>
       </div>
+    
       
     </div>
   );

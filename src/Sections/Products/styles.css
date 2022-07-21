@@ -7,7 +7,9 @@
   justify-content: flex-start;
 }
 
-.title-release {
+.list-products {
+  display: flex;
+  flex-direction: row;
 }
 
 .product-list {
@@ -50,7 +52,8 @@
   margin-top: 10px;
 }
 .price-product {
-  color: #00453d;
+  color: #6730dd;
+
 }
 
 @media (max-width: 600px) {
