@@ -9,6 +9,8 @@ const PUBLIC_KEY =
 //Load stripe after inset public key
 const stripe = loadStripe(PUBLIC_KEY);
 
+
+
 //Elements load all elements for stripe needs
 
 function StripeContainer() {

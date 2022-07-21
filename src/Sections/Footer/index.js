@@ -17,13 +17,13 @@ function Footer() {
             <BiPhoneCall className="icon-footer" /> +55 5599699-9090
           </li>
           <li className="contact-item">
-            <AiFillMail className="icon-footer" /> empresa-nina@hotmail.com
+            <AiFillMail className="icon-footer" /> jordam@hotmail.com
           </li>
           <li className="contact-item">
-            <AiFillInstagram className="icon-footer" /> @empresa-nina
+            <AiFillInstagram className="icon-footer" /> @jordan
           </li>
           <li className="contact-item">
-            <AiFillFacebook className="icon-footer" /> empresa-nina
+            <AiFillFacebook className="icon-footer" /> Jordan
           </li>
         </ul>
       </div>
@@ -33,6 +33,7 @@ function Footer() {
       </div>
 
     </div>
+    
   );
 }
 

@@ -89,18 +89,22 @@
 }
 
 .button-look {
-  height: 60px;
-  width: 120px;
+  height: 30px;
+  width: 100px;
   margin-top: 40px;
-  background-color: #6730dd;
+  background: none;
+  border-style: solid;
+  border-color: #6730dd;
   color: #fff;
   cursor: pointer;
-  border-style:none;
+  -webkit-transition: 1s;
 }
 
 .button-look:hover {
-  background-color: #8455e9;
-  transition: 1s;
+  height: 60px;
+  width: 120px;
+
+  -webkit-transition: 1s;
 }
 
 @media (max-width: 600px) {

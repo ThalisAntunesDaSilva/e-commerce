@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function PropertiesProduct() {
+  const navigate = useNavigate();
   const produto = JSON.parse(localStorage.getItem("productselect"));
+
+  function handlePayment(){
+    navigate("/payment")
+  }
 
   return (
     <div className="legend-container">
@@ -17,7 +23,7 @@ export default function PropertiesProduct() {
   */}
       <h1 className="price">R$ 1,00</h1>
 
-      <button className="button-purchase">Comprar</button>
+      <button onClick={() => {handlePayment()}}className="button-purchase">Comprar</button>
     </div>
   );
 }

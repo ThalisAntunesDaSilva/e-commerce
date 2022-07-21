@@ -2,22 +2,24 @@ import React, { useState } from "react";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "axios";
 import "./styles.css";
+import {  toast } from "react-toastify";
 
 const options = {
   iconStyle: "solid",
+
   style: {
     base: {
-      iconColor: "#c4f0ff",
-      color: "#fff",
+      iconColor: "#6730dd",
+      color: "#000000",
       fontWeight: 500,
       fontSize: "16px",
       fontSmoothing: "antialiased",
-      ":-webkit-autofill": { color: "#fce883" },
-      "::placeholder": { color: "#87bbfd" },
+      ":-webkit-autofill": { color: "#6730dd" },
+      "::placeholder": { color: "#6730dd" },
     },
     invalid: {
-      iconColor: "#ffc7ee",
-      color: "#ffc7ee",
+      iconColor: "#FF0000",
+      color: "#FF0000",
     },
   },
 };
@@ -36,8 +38,9 @@ function PaymentForm() {
 
     if (!error) {
       try {
+        toast.success("carregando");
         const { id } = paymentMethod;
-        const response = await axios.post("http://localhost:4000/payment", {
+        const response = await axios.post("http://localhost:8080/payment", {
           amount: 100,
           id,
         });
@@ -59,19 +62,20 @@ function PaymentForm() {
       {!sucess ? (
         <form onSubmit={handleSubmit}>
           <fieldset className="formGroup">
+          <h2 className="legend">Realize o preenchimento dos seguintes dados a baixo:</h2>
             <div className="formRow">
               <CardElement className="option-card" options={options} />
             </div>
             <div className="container-purchase">
               <button className="button-purchase">Pagar</button>
             </div>
+          
           </fieldset>
         </form>
       ) : (
         <div className="feedback">
-          <h2>
-            Parabéns pela compra :D volte sempre.
-          </h2>
+          <h1>Pagamento realizado!</h1>
+          <h2>Parabéns pela compra :D volte sempre.</h2>
         </div>
       )}
     </>
