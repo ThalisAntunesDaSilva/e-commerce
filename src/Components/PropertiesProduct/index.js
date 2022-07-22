@@ -22,8 +22,9 @@ export default function PropertiesProduct() {
     </div>
   */}
       <h1 className="price">R$ 1,00</h1>
-
+<div className="container-button">
       <button onClick={() => {handlePayment()}}className="button-purchase">Comprar</button>
+      </div>
     </div>
   );
 }
