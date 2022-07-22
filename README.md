@@ -1,6 +1,8 @@
 # E-Commerce Jordan Store - React JS
 
-Este projeto se encontra em https://e-commerce-thalisantunesdasilva.vercel.app.
+**Acesse:**  https://e-commerce-thalisantunesdasilva.vercel.app.
+
+![](git-ecommerce.gif)
 
 ![Badge](https://img.shields.io/static/v1?label=React&message=Framework&color=blue&style=for-the-badge&logo=REACT) ![Badge](https://img.shields.io/static/v1?label&message=JavaScript&color=BLACK&style=for-the-badge&logo=JAVASCRIPT)
 
@@ -13,6 +15,11 @@ Com o intuíto de praticar e aprender mais sobre API's, foi criado este e-commer
 * Stripe Payments para pagamento via cartão não real
 * Google Maps API para dar localização do negócio
 * Axios comunicação com o servidor node js criado
+
+## Payment Test
+Use as card number :4242 4242 4242 4242 expiry date 04/32 and CVC any number
+
+
 
 ## Geting Started
 To install the dependencies, open your cmd in the project folder and type:
@@ -27,3 +34,7 @@ npm start
 ```
 
 The home page will be initialized on the route localhost:3000.
+
+
+
+
